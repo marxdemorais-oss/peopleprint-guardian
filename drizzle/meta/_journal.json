@@ -1,0 +1,160 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793203200000,
+      "tag": "0000_guardian_product",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793275200000,
+      "tag": "0001_guardian_trial_context",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793293200000,
+      "tag": "0002_guardian_messaging",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793482800000,
+      "tag": "0003_guardian_x_connection",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793482800001,
+      "tag": "0004_guardian_x_transport",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1793482800002,
+      "tag": "0005_guardian_message_activity",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1793524800000,
+      "tag": "0006_guardian_transport_tests",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1793526000000,
+      "tag": "0007_guardian_xchat_transport",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1793534400000,
+      "tag": "0008_guardian_guest_settings",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1793568600000,
+      "tag": "0009_guardian_user_allowance",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1793602800000,
+      "tag": "0010_account_context_and_live_warnings",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1793739600000,
+      "tag": "0011_wolfgang_voice_editions",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1793743200000,
+      "tag": "0012_wolfgang_style",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1793746800000,
+      "tag": "0013_wolfgang_punctuation",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "6",
+      "when": 1793750400000,
+      "tag": "0014_guardian_merged_logins",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "6",
+      "when": 1793754000000,
+      "tag": "0015_wolfgang_comparison",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "6",
+      "when": 1793757600000,
+      "tag": "0016_wolfgang_sales_voice",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "6",
+      "when": 1793761200000,
+      "tag": "0017_guardian_monthly_allowance",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "6",
+      "when": 1793768400000,
+      "tag": "0019_guardian_watch",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "6",
+      "when": 1793772000000,
+      "tag": "0020_guardian_public_knowledge",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "6",
+      "when": 1793772001000,
+      "tag": "0021_guardian_directory_maintenance_grant",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "6",
+      "when": 1793836800000,
+      "tag": "0022_guardian_inspector",
+      "breakpoints": true
+    }
+  ]
+}
