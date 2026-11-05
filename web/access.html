@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e4d">
+  <title>Meet Wolfgang | Peopleprint Guardian</title>
+  <meta name="description" content="Bring a suspicious message to Wolfgang, your personal Guardian. Sign in with a code sent to your email.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/guardian.css">
+  <link rel="stylesheet" href="/assets/journey.css">
+  <link rel="stylesheet" href="/assets/onboarding.css">
+  <link rel="stylesheet" href="/assets/action-nav.css">
+</head>
+<body class="j-body">
+  <a class="skip" href="#main">Skip to sign-in</a>
+  <header data-app-header data-page="access"></header>
+  <main id="main" class="j-page auth-layout">
+    <section class="auth-copy" aria-labelledby="access-title">
+      <span class="j-label">Peopleprint Guardian</span>
+      <h1 id="access-title">Meet <em>Wolfgang.</em></h1>
+      <p class="auth-lead" id="access-lead">Received a message that doesn’t feel right? Bring it here and keep it alongside the details you trust.</p>
+      <div class="auth-box">
+        <h2 id="auth-heading">Open your workspace</h2>
+        <p id="auth-description">We’ll send a six-digit sign-in code to your email.</p>
+        <form id="email-form">
+          <label class="j-field"><span>Email address</span><input id="auth-email" type="email" autocomplete="email" inputmode="email" maxlength="254" placeholder="you@example.com" required></label>
+          <button id="auth-start" class="j-button" type="submit">Email me a code</button>
+        </form>
+        <form id="code-form" hidden>
+          <p id="code-destination"></p>
+          <label class="j-field"><span>Six-digit code</span><input id="auth-code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" required aria-describedby="code-destination"></label>
+          <label class="auth-remember"><input id="remember-signin" type="checkbox" autocomplete="off"><span>Keep me signed in for seven days<small>Only on a device you trust.</small></span></label>
+          <button class="j-button" id="verify-code" type="submit">Sign in</button>
+          <div class="auth-code-actions">
+            <button type="button" id="change-email" class="j-text-button">Change email</button>
+            <button type="button" id="resend-code" class="j-text-button">Resend code</button>
+          </div>
+        </form>
+        <div id="signed-in-actions" hidden><a id="continue-signed-in" class="j-button" href="/workspace">Open my workspace</a></div>
+        <p id="auth-feedback" class="j-feedback" role="status" aria-live="polite"></p>
+        <p class="auth-trial" id="auth-trial">Verify your email for one free starter check. Complete your profile for five free checks per calendar month, including any starter check used that month.</p>
+        <div class="auth-return" id="existing-account">Already have an account? <a href="/login">Sign in</a></div>
+      </div>
+      <p class="auth-privacy">You choose which messages and records to share. <a href="/privacy">Privacy &amp; data</a></p>
+    </section>
+    <aside class="auth-companion" aria-label="Wolfgang">
+      <div class="auth-orbit" aria-hidden="true"></div>
+      <div class="j-companion">
+        <div class="wolfgang-stage" data-wolfgang><span class="wolfgang-loading" role="status">Wolfgang is getting ready…</span></div>
+        <span class="j-companion-label"><i class="j-dot"></i> Wolfgang · Your personal Guardian</span>
+      </div>
+      <div class="j-speech"><small>Wolfgang</small><span id="auth-greeting">“We can start with the message that made you pause.”</span></div>
+    </aside>
+  </main>
+  <footer class="j-page auth-footer"><span>Peopleprint Guardian by People Organised</span><span>On your side of the story.</span></footer>
+  <script type="module" src="/assets/access.js"></script>
+</body>
+</html>

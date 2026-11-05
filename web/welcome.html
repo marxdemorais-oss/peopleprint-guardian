@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e4d">
+  <title>Start with Wolfgang | Peopleprint Guardian</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/assets/guardian.css">
+  <link rel="stylesheet" href="/assets/journey.css">
+  <link rel="stylesheet" href="/assets/onboarding.css">
+  <link rel="stylesheet" href="/assets/action-nav.css">
+</head>
+<body class="j-body">
+  <a class="skip" href="#main">Skip to welcome</a>
+  <header data-app-header data-page="welcome"></header>
+  <main id="main" class="j-page onboarding-layout">
+    <aside class="onboarding-companion" aria-label="Wolfgang">
+      <div class="j-companion"><div class="wolfgang-stage" data-wolfgang data-view="portrait"><span class="wolfgang-loading" role="status">Loading Wolfgang…</span></div></div>
+      <div class="j-speech"><small>Wolfgang</small><span id="welcome-speech">“What made you pause? That’s a good place to start.”</span></div>
+    </aside>
+    <section class="onboarding-panel">
+      <div id="welcome-intro" hidden>
+        <span class="j-label">Your profile</span>
+        <h1>What shall I call you?</h1>
+        <p>Choose the name Wolfgang will use in your workspace.</p>
+        <form id="welcome-form">
+          <label class="j-field"><span>Your name</span><input id="welcome-name" type="text" autocomplete="given-name" minlength="1" maxlength="60" placeholder="The name you use" required></label>
+          <button class="j-button" id="welcome-next" type="submit">Complete my profile <span aria-hidden="true">→</span></button>
+          <a class="onboarding-skip j-text-button" id="welcome-skip" href="/workspace">Skip for now</a>
+        </form>
+      </div>
+      <div id="welcome-routes">
+        <span class="j-label">With Wolfgang</span>
+        <h1>Where would you<br><em>like to start?</em></h1>
+        <p class="onboarding-lead">If something has made you uneasy, start with that message.</p>
+        <div class="onboarding-options">
+          <button type="button" class="onboarding-choice primary" data-destination="/workspace?start=paste">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 5h18v14H12l-7 5z"/><path d="M9 10h10M9 14h7"/></svg>
+            <strong>Bring a message</strong><small>Paste the wording, a link or a request into a new check.</small>
+          </button>
+          <button type="button" class="onboarding-choice" data-destination="/connections#contact">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="6" y="2" width="16" height="24" rx="4"/><path d="M11 6h6M12 22h4M10 12h8v5h-8z"/></svg>
+            <strong>Save Wolfgang’s contact</strong><small>Keep his contact card and find him in your messaging apps.</small>
+          </button>
+          <button type="button" class="onboarding-choice" data-destination="/connections#add-connection">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="m12 8 3-3a6 6 0 0 1 8 8l-3 3M16 20l-3 3a6 6 0 0 1-8-8l3-3M10 18l8-8"/></svg>
+            <strong>Connect a mailbox</strong><small>Choose email records to keep with a check.</small>
+          </button>
+          <button type="button" class="onboarding-choice" data-destination="/workspace?start=finance">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="5" width="22" height="18" rx="3"/><path d="M3 11h22m-17 6h7"/></svg>
+            <strong>Financial documents</strong><small>Compare a payment request with your bank statement or invoice.</small>
+          </button>
+          <button type="button" class="onboarding-choice" data-destination="/workspace?start=upload">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M8 3h10l5 5v17H5V3zM18 3v6h5M14 21V12m-4 4 4-4 4 4"/></svg>
+            <strong>Import messages</strong><small>Choose messages from a saved email, WhatsApp chat or SMS export.</small>
+          </button>
+        </div>
+        <div class="onboarding-actions"><button type="button" class="j-text-button" id="welcome-continue" data-destination="/workspace">Go to my workspace →</button></div>
+      </div>
+      <div class="j-feedback" id="welcome-status" role="status" aria-live="polite"></div>
+      <footer class="j-foot"><span>Peopleprint Guardian by People Organised</span><a href="/privacy">Privacy &amp; data</a></footer>
+    </section>
+  </main>
+  <script type="module" src="/assets/welcome.js"></script>
+</body>
+</html>

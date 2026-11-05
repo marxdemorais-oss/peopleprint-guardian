@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your connections | Peopleprint Guardian</title>
+  <meta name="description" content="Message Wolfgang, connect a mailbox or bring a saved conversation into a check.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/guardian.css"><link rel="stylesheet" href="/assets/journey.css"><link rel="stylesheet" href="/assets/connections.css"><link rel="stylesheet" href="/assets/action-nav.css">
+</head>
+<body class="j-body connections-page">
+<a class="skip" href="#main">Skip to content</a>
+<header data-app-header data-page="connections"></header>
+<main id="main" class="connections-wrap">
+  <p id="connection-feedback" class="connection-notice" role="status" aria-live="polite" hidden></p>
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="connection-intro">
+      <div class="connection-intro-copy">
+        <span class="eyebrow" id="connections-eyebrow">Your connections</span>
+        <h1 id="contact-title">Your <em>connections.</em></h1>
+        <p id="connections-lead">Manage your mailboxes, choose which ones Wolfgang can monitor, and find his contact details.</p>
+        <div id="contact-action" class="connection-intro-actions">
+          <span id="first-connections" hidden><a class="j-button" id="connections-continue" href="/workspace?start=paste">Bring a message <span aria-hidden="true">→</span></a></span>
+          <a id="save-wolfgang" class="j-button" href="/api/wolfgang/contact-card" download="Wolfgang.vcf">Save Wolfgang’s contact <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="connection-companion"><div class="wolfgang-stage" data-wolfgang data-view="portrait"><span class="wolfgang-loading" role="status">Loading Wolfgang…</span></div><div class="connection-speech"><span>Wolfgang</span><p>“If a message feels off, bring it to me.”</p></div></div>
+    </div>
+  </section>
+  <section id="accounts" class="accounts-section" aria-labelledby="accounts-title">
+    <div class="connection-section-head"><div><h2 id="accounts-title">Your connected mailboxes</h2><p>Connecting a mailbox lets you pick emails for a check. Monitoring is a separate choice for each supported mailbox.</p></div></div>
+    <a href="#add-connection" id="add-account-action" class="source-action" aria-controls="add-connection" aria-expanded="false">Connect a mailbox +</a>
+    <div id="connection-grid" class="connection-grid" aria-busy="true"><div class="connection-loading" role="status">Loading your mailboxes…</div></div>
+    <p class="connection-small-note" id="saved-information" hidden>Disconnecting stops future access. <a href="/account#privacy">Manage information you’ve already shared</a>.</p>
+    <section id="add-connection" class="connection-setup" aria-labelledby="provider-title" tabindex="-1" hidden>
+      <div id="email-options" class="connection-setup-body">
+        <div class="connection-section-head"><div><h3 id="provider-title">Choose your email provider</h3><p>Select the service that hosts your mailbox, even if you use your own domain.</p></div><button id="close-email-options" class="text-link" type="button">Close</button></div>
+        <div id="connection-options" class="connection-grid"><p class="connection-loading" role="status">Loading mailbox options…</p></div>
+      </div>
+    </section>
+  </section>
+  <section id="channels" class="accounts-section" aria-labelledby="channels-title">
+    <div class="connection-section-head"><div><h2 id="channels-title">Contact Wolfgang</h2><p>These are Wolfgang’s addresses. Check the status on each channel before sending a message.</p></div></div>
+    <p id="identity-notice" class="connection-state-notice" role="status" hidden></p>
+    <div id="contact-channels" class="contact-channels" aria-busy="true"><div class="connection-loading" role="status">Finding Wolfgang’s contact details…</div></div>
+  </section>
+</main>
+<footer class="connection-footer"><a href="/workspace">Back to Wolfgang</a><a href="/account#privacy">Privacy &amp; data</a><a href="/privacy">How your information is handled</a></footer>
+<script type="module" src="/assets/connections.js"></script>
+</body></html>
