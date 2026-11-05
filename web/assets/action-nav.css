@@ -1,0 +1,17 @@
+/* A single global header. Check history and New check belong to the workspace sidebar. */
+.g-header{box-sizing:border-box;display:flex;align-items:center;gap:40px;min-height:84px;padding:0 max(28px,calc((100vw - 1300px)/2));background:#fff;border-bottom:1px solid #e0e8e4;position:sticky;top:0;z-index:40;color:#173e4d;width:100%}
+.g-brand{display:block;flex:0 0 auto;min-width:0}.g-brand img{display:block;width:188px;max-width:100%;height:auto}
+.g-nav{display:flex;align-self:stretch;align-items:center;gap:28px;font-size:14px;min-width:0}.g-nav a{display:flex;align-items:center;position:relative;min-height:44px;height:100%;white-space:nowrap;color:#657a7d}.g-nav a[aria-current=page]{color:#173e4d;font-weight:700}.g-nav a[aria-current=page]:after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#377c6d}
+.g-session-controls{display:flex;align-items:center;gap:22px;font-size:14px;margin-left:auto;flex:0 0 auto}.g-session-controls>a{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap}.g-session-controls>a[aria-current=page]{font-weight:700;color:#20695b}.g-session-controls>[aria-disabled=true]{opacity:.55;cursor:wait}
+.g-header a:focus-visible{outline:3px solid #66b7a1;outline-offset:4px;border-radius:3px}.g-header-notice{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);z-index:100;background:#173e4d;color:#fff;padding:16px 20px;border-radius:14px;font-size:13px;line-height:1.6}
+#check-history{scroll-margin-top:24px}
+@media(max-width:950px){.g-header{gap:26px;padding-left:24px;padding-right:24px}.g-nav{gap:22px}.g-session-controls{gap:18px}}
+@media(max-width:700px){.g-header{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:62px 42px;min-height:104px;gap:0 16px;padding:0 18px}.g-brand{grid-column:1;grid-row:1;max-width:168px}.g-brand img{width:168px}.g-session-controls{grid-column:2;grid-row:1;gap:16px;font-size:12px;margin-left:0}.g-nav{grid-column:1/-1;grid-row:2;justify-content:center;gap:32px;font-size:13px}.g-nav a{min-height:42px}.wk-layout{padding-top:0}}
+@media(max-width:380px){.g-header{gap:0 12px;padding:0 16px}.g-brand,.g-brand img{max-width:138px}.g-session-controls{gap:12px;font-size:12px}}
+
+.g-session-pending { display: inline-block; width: 5rem; height: 1px; }
+:where(.j-page,.connections-wrap,.wk-main) [id] { scroll-margin-top: 6rem; }
+@media(max-width:700px) { :where(.j-page,.connections-wrap,.wk-main) [id] { scroll-margin-top: 7rem; } }
+
+#talk { scroll-margin-top: 5.5rem; }
+@media(max-width:700px){ #talk { scroll-margin-top: 7rem; } .g-nav { gap: clamp(12px,4vw,28px); } }

@@ -1,0 +1,14 @@
+.tour-shell{max-width:1160px;margin:auto;padding:clamp(28px,6vw,76px) clamp(18px,4vw,52px);color:#183e49}
+.tour-heading{max-width:760px;margin-bottom:2.2rem}.tour-heading h1{font-size:clamp(2.4rem,5vw,4.5rem);line-height:1.03;letter-spacing:-.045em;margin:.35em 0}.tour-heading>p:last-child{font-size:1.14rem;line-height:1.6}
+.tour-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,40px);align-items:start}
+.tour-records,.tour-companion{min-width:0;border:1px solid #cbdcd6;border-radius:24px;padding:clamp(18px,3vw,36px)}
+.tour-records{background:#f5f8f6}.tour-grid h2{font-size:1.4rem;line-height:1.25;margin:.35em 0}.tour-sender,#tour-status,.tour-input+small{color:#48656b}
+.tour-records blockquote{border-left:3px solid #6aa998;margin:1.3em 0 1.7em;padding-left:1em;line-height:1.65}.tour-records section{border-top:1px solid #cbdcd6;padding-top:1.3em}
+.tour-identity{display:flex;align-items:center;gap:1em}.tour-portrait{position:relative;flex:none}.tour-portrait img{display:block;border-radius:50%;object-fit:cover}.tour-identity h2{font-size:1.75rem}
+#tour-status{font-size:.86rem;margin:.8em 0}.tour-turn{margin:1em 0;line-height:1.55;overflow-wrap:anywhere}.tour-turn b{display:block;font-size:.78rem;letter-spacing:.06em;color:#2b685c}
+#tour-thread{max-height:30rem;overflow:auto}.tour-input{display:flex;gap:.5rem;margin:.5em 0}.tour-input input{min-width:0;flex:1;padding:.8em;border-radius:12px;border:1px solid #94ada7;font:inherit}
+.tour-foot{display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2em}.tour-shell [hidden]{display:none}
+@media(max-width:720px){.tour-grid{grid-template-columns:1fr}.tour-records .button{white-space:normal}.tour-heading{margin-bottom:1.2rem}}
+.tour-audio{margin-left:auto;border:1px solid #cbdcd6;border-radius:50%;background:#fff;color:#215c52;width:44px;height:44px;cursor:pointer}.tour-audio[data-muted=true]{text-decoration:line-through;opacity:.7}
+
+.tour-source{padding:0;background:transparent;border:0;border-bottom:1px solid currentColor;color:#286e62;cursor:pointer;text-align:left}
